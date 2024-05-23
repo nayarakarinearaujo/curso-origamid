@@ -6,20 +6,29 @@ body {
     margin: 40px;
 }
 
-h1,
-p {
-    margin: 0px;
-}
 
 h1 {
     font-size: 48px;
     line-height: 1;
 }
 
+
+h1,
+p {
+    margin: 0px;
+}
+
 img {
     max-width: 100%;
     border-radius: 4px;
+    grid-column: 1 / -1;
 }
+
+.titulo {
+    grid-column: 1/ -1 ;
+    text-align: right;
+}
+
 
 .comprar {
     background: #a8f;
@@ -39,4 +48,21 @@ span {
     background: #ddd;
     padding: 5px 10px;
     border-radius: 4px;
+    place-self: start end ;
+    grid-column: 2;
+    grid-row: 2;
 }
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+    place-self: start;
+    display: grid;
+    place-items: start;
+    gap: 20px;
+}
+
