@@ -1,0 +1,8 @@
+img {
+    max-width: 100%; /*Para ela não fica maior que o pixels que ela aguenta*/
+}
+
+/*Vai determinar a largura que as imagens dentro da div vai ter*/
+div {
+    width: 300px;
+}
