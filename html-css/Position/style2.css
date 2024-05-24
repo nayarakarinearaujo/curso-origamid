@@ -1,0 +1,15 @@
+
+h1 {
+    margin: 8px;
+    padding: 10px;
+    background: lightblue;
+}
+
+.index1 {
+    position: relative;
+    background: greenyellow;
+    top: 20px;
+    z-index: 1; /*Ele ajuda o elemento a fica por cima de todos*/
+}
+
+

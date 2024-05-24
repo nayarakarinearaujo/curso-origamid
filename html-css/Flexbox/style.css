@@ -1,0 +1,26 @@
+
+
+body {
+ margin: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: center;
+    align-content: center; (Para atalho desses dois usar o place-content*/
+    place-content: center;
+}
+
+
+h2 {
+background: #e7e7e7;
+border: 1px solid #d7d7d7;
+padding: 20px;
+margin: 0px;
+flex: 1;
+/* flex-grow: 1;
+flex-basis: 0;
+flex-shrink: 1; (Atalho para esses 3 é flex: 1) */
+}
