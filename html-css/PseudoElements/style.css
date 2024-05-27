@@ -1,0 +1,45 @@
+
+
+h1::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: #caf;
+}
+
+/* h1::after{
+    content: "teste";
+} */
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.rem;
+    display: flex;
+    align-items: center;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(#caf, #fff);
+    border: 2px solid #caf;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/*Deixar a primeira linha em negrito*/
+p::first-line {
+    font-weight: bold;
+}
+
+/*Aumentar a primeira letra da frase*/
+p::first-letter {
+    font-size: 2rem;
+    color: blue;
+}
