@@ -1,0 +1,46 @@
+
+a {
+    text-decoration: none;
+    color: white;
+    background: darkblue;
+    display: inline-block;
+}
+
+p {
+    background: lightblue;
+
+}
+
+.px {
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+html {
+    font-size: 32px;
+
+}
+
+.rem {
+    font-size: 1.5rem;
+    /* !1rem significa 16px;
+    !1.5rem significa 24px;
+    !2rem significa 32px;
+    !3rem significa 64px */
+
+    padding: 1rem 2rem;
+}
+
+/* O em quado muda o elemnto pai ele também é influenciado e muda junto, geralmente não é muito usado . */
+
+.px {
+    font-size: 32px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 2rem;
+}

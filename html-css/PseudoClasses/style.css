@@ -1,0 +1,35 @@
+
+a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background: #caf;
+    color: #217;
+    transition: 0.3s; /*Para transição mais suave do hover*/
+}
+
+/* :hover: Aplica estilos quando o mouse está sobre um elemento.*/
+a:hover {
+    background: #adf;
+    color: #147;
+}
+
+/* :focus: Aplica estilos quando um elemento está em foco, geralmente através de clique ou navegação via teclado.*/
+a:focus{
+background: #cfa;
+color: #371;
+}
+
+/* :active: Aplica estilos no momento em que um elemento está sendo ativado, como durante um clique do mouse.*/
+a:active {
+    background: #ffa;
+    color: #761;
+}
+
+/* :visited para alterar a cor de um link já visitado, pouco usado.
+a:visited {
+background: #fda;
+color: #731;
+} */

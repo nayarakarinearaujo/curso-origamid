@@ -1,0 +1,33 @@
+.bicicleta {
+    height: 600px;
+    background-color: lightskyblue;
+    background-image: url("bicicleta-preta.avif") ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+}
+
+h1 {
+    margin: auto;
+    background: white;
+    padding: 1rem 2rem;
+}
+
+.pattern {
+    height: 380px;
+    background-color: lightcoral;
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+.linear {
+    height: 200px;
+    background-image: linear-gradient(to right,
+     lightskyblue, lightcoral);
+}
+
+.gradial {
+    height: 200px;
+    background-image: radial-gradient( circle, black, blue, rgb(70, 0, 128), white);
+}

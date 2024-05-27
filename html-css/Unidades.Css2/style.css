@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+}
+
+
+div {
+    background: lightskyblue;
+    width: 50vw;
+    height: 100vh;
+}

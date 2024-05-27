@@ -1,0 +1,73 @@
+a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background: #caf;
+    color: #217;
+    transition: 0.3s;
+    /*Para transição mais suave do hover*/
+}
+
+/* :hover: Aplica estilos quando o mouse está sobre um elemento.*/
+a:hover {
+    background: #adf;
+    color: #147;
+}
+
+.lista1 li:first-child {
+    background: rgb(255, 170, 196);
+}
+
+/*Seleciona o primeiro elemento da lista*/
+.lista1 li:last-child {
+    background: rgb(180, 255, 170);
+}
+
+/*Seleciona o 3 elemento de cima pra baixo*/
+.lista1 li:nth-child(3) {
+    background: #caf;
+}
+
+/*Seleciona todos elementos pares*/
+.lista1 li:nth-child(even) {
+    background: rgb(170, 207, 255);
+}
+
+/*Seleciona todos elementos ímpares*/
+.lista1 li:nth-child(even) {
+    background: rgb(255, 170, 255);
+}
+
+/*Seleciona todo 3 elemento da li, pode ser 2n, 3n, 4n, 5n... Assim ele vai selecionando*/
+.lista2 li:nth-child(3n) {
+    background: #caf;
+}
+
+/*Seletor de negação*/
+
+/*Seleciona todas as lis*/
+.lista3 li {
+    background: #caf;
+}
+
+/*Para deixar a primeira diferente*/
+.lista3 li:not(:first-child){
+    background: rgb(255, 170, 248);
+}
+
+/*Para deixar a última diferente*/
+.lista3 li:not(:last-child) {
+    background: rgb(230, 255, 170);
+}
+
+/* Para colocar todos juntos caso seja definido a mesma cor
+.lista3 li:not(:last-child, :first-child, .terceiro) {
+    background: rgb(255, 204, 170);
+} */
+
+/*Caso queira deixar apenas um de fora desse estilo, no caso o contato*/
+h2:not(.contato) {
+    text-decoration: underline;
+}
