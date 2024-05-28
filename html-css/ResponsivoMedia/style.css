@@ -1,0 +1,68 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+/* Menor que 600px */
+@media (max-width: 600px) {
+    div {
+        grid-template-columns: 1fr;
+
+    }
+
+    h1 {
+        background: lightpink;
+    }
+
+    /* Remove a imagem para telas menores que 600px */
+    img {
+display: none;
+    }
+}
+
+
+/* Maior que 1000px*/
+@media (min-width: 1000px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+
+/* Maior que 1000px e menor que 500px ele vai alterar o tamanho da font*/
+/* @media (min-width: 1000px), (max-width: 500px) {
+    html {
+        font-size: 150%;
+    }
+} */
+
+/* Precisa as duas serem verdadeiras para aplicar a estilização */
+@media (min-width: 700px) and (max-width: 900px) {
+    p {
+        background: lightskyblue;
+    }
+}
+
+/* Ele só ativa o CSS na tela, quando colocar para imprimir ele não aparece */
+@media screen {
+    body {
+        background: lightpink;
+    }
+}
+
+/* Ele só ativa o CSS quando colocar para imprimir */
+@media print {
+    body {
+        background: lightseagreen;
+    }
+}
