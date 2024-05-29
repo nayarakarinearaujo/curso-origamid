@@ -1,0 +1,28 @@
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1rem;
+ max-width: 960px;
+ margin: o auto; /*Primeiro código é para superior e inferior e o segundo para as laterais*/
+}
+
+.cover img {
+    height: 100%;
+    object-fit: cover; /*Não deixa distorcer a imagem, e não deixa ela pegar de ponta a ponta */
+    object-position: top right;
+    /* Se for usar a imagem que só faz sentuido inteira, não usar esse método. */
+}
+
+.texto {
+    align-self: center;
+}
+
+p {
+    max-width: 60ch;
+}
