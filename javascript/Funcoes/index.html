@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="interagir()">Clique aqui para escolher sua cor favorita</button>
+
+    <script>
+       function corFavorita(cor) {
+
+        //Váriável com as possibilidades de escrita das cores
+    const coresMensagens = {
+        'azul': 'Eu gosto do céu',
+        'Azul': 'Eu gosto do céu',
+        'AZUL': 'Eu gosto do céu',
+        'verde': 'Eu gosto de árvores',
+        'Verde': 'Eu gosto de árvores',
+        'VERDE': 'Eu gosto de árvores',
+        // Adicione mais cores e mensagens conforme necessário
+    };
+
+    // Verifica se a cor existe no objeto e retorna a mensagem correspondente
+    if (cor in coresMensagens) {
+        return coresMensagens[cor];
+    } else {
+        return 'Não tenho essa cor cadastrada';
+    }
+}
+
+function interagir() {
+    let cor = prompt("Digite uma cor: ");
+    let mensagem = corFavorita(cor);
+    alert(mensagem);
+}
+    </script>
+
+</body>
+</html>
