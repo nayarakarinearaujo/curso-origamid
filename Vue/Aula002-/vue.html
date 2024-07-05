@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - DOM</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <p>Bermudas - R$ <span>{{preco}}</span></p>
+        <button @click="total++">Adicionar</button>
+        <button @click="total--">Remover</button>
+        <span>Total de peças: {{total}}</span>
+        <p>Total: <span>{{total * preco}}</span></p>
+
+    </div>
+
+
+<script>
+
+const vm = new Vue ({
+    el: "#app",
+    data: {
+        preco: 49,
+        total: 0,
+    }
+});
+
+</script>
+
+</body>
+</html>

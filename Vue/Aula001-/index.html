@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+
+<body>
+
+   <div id="app">
+    {{nome}}, {{idade}}, {{faculdade.possui}}, {{faculdade.curso}}
+   </div>
+
+
+
+    <script>
+
+        options = {
+            el: "#app",
+            data: {
+                nome:"Nayara Karine",
+                idade: 31,
+
+                faculdade: {
+                    possui: "Sim",
+                    curso: "Engenharia de Software"
+                }
+            }
+        }
+        const vm = new Vue(options);
+
+    </script>
+
+</body>
+
+</html>
