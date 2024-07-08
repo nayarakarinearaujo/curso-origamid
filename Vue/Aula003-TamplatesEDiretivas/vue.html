@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplates e Diretivas</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{titulo}}</h1>
+
+        <div v-show="comprou" :style="{background: cor}">
+            <p>{{conteudo}}</p>
+            <p>{{lado * lado - lado / 100}}</p>
+            <p>{{comprou ? 'Sim ele comprou' : 'Não comprou. Compre aqui!'}}</p>
+            <input v-model="cor" type="color">
+        </div>
+
+        <a :href="comprou ? href : '' ">{{href}}</a>
+
+    </div>
+
+    <script>
+
+        new Vue({
+            el: "#app",
+            data: {
+                titulo: "Curso de JavaScript",
+                conteudo: "Esse é o conteúdo",
+                lado: 5,
+                comprou: true,
+                href: "nayarakarine.com",
+                cor:"#333"
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
