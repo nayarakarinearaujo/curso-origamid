@@ -1,10 +1,15 @@
 
+
 const animais = document.getElementById('animais');
 console.log(animais);
 
 const gridSection = document.getElementsByClassName('grid-section');
 console.log(gridSection);
 
+//! Usando querySellector
+
+//* querySelectorAll retorna todos os elementos correspondentes em uma NodeList;
+//* querySelector retorna apenas o primeiro elemento correspondente ou null se nenhum elemento for encontrado.
 
 const primeiraLi = document.querySelector('li');
 console.log(primeiraLi);
