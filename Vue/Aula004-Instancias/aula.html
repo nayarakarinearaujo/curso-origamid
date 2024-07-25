@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instâncias</title>
+    
+
+    <script src="/Vue/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app"></div>
+
+    <script>
+
+        function VueClone(options) {
+            this.options = options;
+            this.el = document.querySelector(options.el);
+        }
+
+        const vmClone = new VueClone ({
+            el: "#app",
+            data: {
+                nome: "Martelo",
+            }
+        })
+
+        console.log(VueClone);
+
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                instrumento: "Violão",
+            }
+        });
+        console.log(vm);
+
+
+    </script>
+
+</body>
+</html>

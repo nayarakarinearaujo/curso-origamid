@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <!----------------Exercício 1------------------->
+
+    <!-- Utilizando a API
+     https://api.hgbrasil.com/finance/stock_price?key=CHAVE&symbol=AAPL34
+
+     Crie um método que faça o fetch da resposta acima
+     O método deve ser ativado ao clique no botão Ver Preço
+
+     Coloque a resposta json do fetch em uma data e mostre o valor de latestPrice, latestTime e o companyName na interface.
+      -->
+
+
+    <div id="app">
+        
+        <button @click="puxarAcoes">Puxar Ações</button>
+
+        <p>latestTime: {{ acoes.latestTime }}</p>
+        <p>latestPrice: {{ acoes.latestPrice }}</p>
+        <p>companyName: {{ acoes.companyName }}</p>
+    </div>
+
+    <script>
+        // --------------Exercício 1-----------------
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                acoes: {}
+            },
+            methods: {
+                puxarAcoes() {
+                    fetch("https://api.iextrading.com/1.0/stock/AMZN/quote")
+                        .then(response => response.json())
+                        .then(json => {
+                            this.acoes = json.results.AAPL34;
+                        })
+                        .catch(error => {
+                            console.error('Erro ao buscar dados:', error);
+                        });
+                }
+            },
+        });
+    </script>
+
+</body>
+
+</html>

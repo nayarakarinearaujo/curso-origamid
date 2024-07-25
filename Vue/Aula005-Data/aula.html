@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        {{cor}}
+    </div>
+
+
+    <script>
+
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                cor: "Vermelho"
+            }
+        })
+
+        // Para alterar o atributo:
+        //vm.cor = "Azul";
+    </script>
+
+</body>
+
+</html>

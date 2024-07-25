@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instâncias</title>
+    <title>Document</title>
 
     <script src="/Vue/vue.js"></script>
+
 </head>
+
 <body>
-    
-    <div id="app"></div>
+
+    <!-- Crie uma tag com o id app inicie uma instancia de Vue -->
+
+    <div id="app">
+        {{nome}}
+    </div>
+
+
+    <!-- Faça o HTML abaixo funcionar com Vue -->
+
+    <div id="app1">
+        {{ferramenta}}
+    </div>
+    <div id="app2">
+        {{instrumento}}
+    </div>
+
 
     <script>
 
-        function VueClone(options) {
-            this.options = options;
-            this.el = document.querySelector(options.el);
-        }
-
-        const vm = new VueClone ({
+        const vm = new Vue({
             el: "#app",
-        })
+            data: {
+                nome: "Martelo",
+            }
+        });
 
-        console.log(vm);
+// -----------------------------------------------------------------
+
+        const vm1 = new Vue ({
+            el:"#app1",
+            data: {
+                ferramenta: "Furadeira",
+            }
+        });
+        
+        const vm2 = new Vue ({
+            el:"#app2",
+            data: {
+                instrumento: "Bateria",
+            }
+
+        });
+        
+
 
     </script>
-
 </body>
+
+
 </html>
