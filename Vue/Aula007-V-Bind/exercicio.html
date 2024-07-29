@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+
+<body>
+
+    <!-- Exercício
+     Utilizando as API's
+
+     https://api.iextrading.com/1.0/stock/aapl/quote
+
+     https://api.iextrading.com/1.0/stock/googl/quote
+
+     -Compare o marktCap (valor de mercado) entre ambos.
+
+     -Mostre o nome das empresas e o valor na interace (companyName e marketCap).
+
+     -Mude a cor para verde o nome da emoresa com maior marketCap e vermelho com menor.
+
+      -->
+
+    <div id="app">
+      
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: "#app",
+            data : {
+                link: "https://www.google.com",
+                cor: "azul",
+                comprou: true
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
