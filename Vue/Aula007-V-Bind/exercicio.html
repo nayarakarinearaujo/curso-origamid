@@ -9,6 +9,16 @@
     <script src="/Vue/vue.js"></script>
 </head>
 
+<style>
+    .verde {
+        color: green;
+    }
+
+    .vermelho {
+        color: red;
+    }
+</style>
+
 <body>
 
     <!-- Exercício
@@ -16,7 +26,7 @@
 
      https://api.iextrading.com/1.0/stock/aapl/quote
 
-     https://api.iextrading.com/1.0/stock/googl/quote
+     https://api.iextrading.com/1.0/stock/google/quote
 
      -Compare o marktCap (valor de mercado) entre ambos.
 
@@ -27,20 +37,53 @@
       -->
 
     <div id="app">
-      
+
+        <div>
+            <p>{{google.companyName}}</p>
+            <p>{{google.companyName}}</p>
+        </div>
+
+        <div>
+            <p>{{apple.companyName}}</p>
+            <p>{{apple.companyName}}</p>
+        </div>
+
+        <button @click="puxarDados">Puxar dados</button>
     </div>
 
     <script>
         const vm = new Vue({
             el: "#app",
-            data : {
-                link: "https://www.google.com",
-                cor: "azul",
-                comprou: true
+            data: {
+                google: {},
+                apple: {},
+            },
+            methods: {
+                
+                fetchGoogle() {
+                    fetch("https://api.iextrading.com/1.0/stock/google/quote")
+                        .then(r => r.json())
+                        .then(google => {
+                            this.google = google;
+                        });
+                },
+
+                fetchApple() {
+                    fetch("https://api.iextrading.com/1.0/stock/aapl/quote")
+                        .then(r => r.json())
+                        .then(apple => {
+                            this.apple = apple;
+                        });
+                },
+            },
+
+            puxarDados() {
+                this.fetchGoogle();
+                this.fetchApple();
             }
         });
-
     </script>
+    
 
 </body>
 
