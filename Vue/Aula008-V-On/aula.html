@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/Vue/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+      <button @click="handleClick">Clique Aqui</button>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                contador: 0
+            },
+            methods: {
+                handleClick(event) {
+                    console.log(event);
+                }
+                
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
