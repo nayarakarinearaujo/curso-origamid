@@ -11,6 +11,14 @@ nome;
 //Contar os caractere
 console.log(nome.length);
 
+//Deixar a propriedade minusculo
 var nomeMinusculo = nome.toLocaleLowerCase();
 
-console.log(nomeMinusculo)
+console.log(nomeMinusculo);
+
+//Interagindo com DOM
+
+var btn = document.querySelector('btn');
+
+btn.classList.add('azul') // adiciona a classer azul
+btn
