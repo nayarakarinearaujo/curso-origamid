@@ -15,6 +15,7 @@ h1 {
 
 /* Menor que 600px */
 @media (max-width: 600px) {
+
     div {
         grid-template-columns: 1fr;
 
@@ -26,7 +27,7 @@ h1 {
 
     /* Remove a imagem para telas menores que 600px */
     img {
-display: none;
+        display: block;
     }
 }
 
