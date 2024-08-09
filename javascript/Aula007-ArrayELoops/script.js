@@ -1,5 +1,5 @@
 
-//Array
+//! Array
 
 // var videoGames = ['Switch', 'PS4', 'Xbox']
 
@@ -26,15 +26,28 @@ for(var i = 0; i < 10; i ++) {
 }
 */
 
-var videoGames = ['Switch', 'PS4', 'XBOX', '3DS'];
 
-//Ele vai retornar todos os valores no array
-for(var i = 0; i < videoGames.length; i++) {
-    console.log(videoGames[i]);
+//! while loop
+//Nesse caso ele vai contar e incrementar de 5 em 5
+var i = 0;
+while (i <= 100) {
+    console.log(i);
+    i= i + 5
 }
 
 
-//Ele vai quebrar quando aparecer o PS4
+//! Loop sobre array
+
+var videoGames = ['Switch', 'PS4', 'XBOX', '3DS'];
+
+//Ele vai retornar todos os valores no array
+for(var item = 0; item < videoGames.length; item ++) {
+    console.log(videoGames[item]);
+}
+
+//! Loop com Break
+//* Ele vai quebrar quando aparecer o PS4
+
 for(var i = 0; i < videoGames.length; i++) {
     console.log(videoGames[i]);
     if(videoGames[i] === 'PS4') {
