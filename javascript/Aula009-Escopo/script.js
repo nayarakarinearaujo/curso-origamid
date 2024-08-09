@@ -40,3 +40,6 @@ console.log(ano); //2025
 
 // let ano = 2020; 
 //Isso da erro pois não pode redeclarar a variável.
+
+//Mas pode alterar essa variável
+ano = 2025;
