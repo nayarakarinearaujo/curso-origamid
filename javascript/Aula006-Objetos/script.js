@@ -1,7 +1,10 @@
 
-//Objetos
+//! Objetos
 
+//objeto: pessoa
 var pessoa = {
+
+    //variável ou propriedade
     nome: 'Nayara',
     sobrenome: 'Araújo',
     idade: 31,
@@ -9,6 +12,7 @@ var pessoa = {
     profissao:'Desenvolvedora Full Stack',
 }
 
+//para acessar a propriedade
 console.log(pessoa.nome);
 
 //Metodos
@@ -23,6 +27,8 @@ var quadrado = {
 
 
     perimetro(lado){
+
+        //this faz referência ao próprio objeto
         return this.lados * lado;
     },
 }
