@@ -1,6 +1,7 @@
 
 //! Operadores de Atribuição
 
+//Operador básico de atribuição, o igual já faz essa atribuição a variável
 var x = 5;
 var y = 10;
 
@@ -44,6 +45,6 @@ console.log(podeBeber);
 var possuiFaculdade = true;
 
 if(possuiFaculdade)
-    console.log('Sim possui Faculadde');
+    console.log('Sim possui Faculade');
 else 
     console.log('Não possui');
