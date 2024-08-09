@@ -39,5 +39,6 @@ console.log(ultimaFruta);
 
 
 //* 2° maneira de fazer
+//Nesse caso ele vai percorer os indices do array e colocando -1 ele vai chegar no final e subtrair 1
 var ultimaFruta = frutas[frutas.length - 1];
 console.log(ultimaFruta);

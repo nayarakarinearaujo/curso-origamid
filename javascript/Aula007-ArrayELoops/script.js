@@ -48,19 +48,18 @@ for(var item = 0; item < videoGames.length; item ++) {
 //! Loop com Break
 //* Ele vai quebrar quando aparecer o PS4
 
-for(var i = 0; i < videoGames.length; i++) {
-    console.log(videoGames[i]);
-    if(videoGames[i] === 'PS4') {
+for(var item = 0; item < videoGames.length; item++) {
+    console.log(videoGames[item]);
+    if(videoGames[item] === 'PS4') {
         break;
     }
 }
 
-
 //! Loop forEach
+//É um método de array
 
 var frutas = ['Banana', 'Pera', 'Maça', 'Abacaxi', 'Uva']
 
-frutas.forEach(function() {
-    console.log(frutas)
-
+frutas.forEach(function(fruta, index) {
+    console.log(`O Indice é [${index}] e a fruta é ${fruta}`)
 });
