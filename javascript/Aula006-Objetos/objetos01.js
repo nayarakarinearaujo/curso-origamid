@@ -36,10 +36,4 @@ var quadrado = {
 console.log(quadrado.area(5));
 console.log(quadrado.perimetro(5));
 
-//Ex: Objetos
 
-var menu = {
-    width:800,
-    height: 50,
-    backgroundColor: '#84E',
-}
