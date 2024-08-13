@@ -46,3 +46,4 @@ imgs.forEach(() => {
 });
 
 imgs.forEach(() => i++);
+console.log(i);
