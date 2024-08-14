@@ -3,26 +3,33 @@
 
 const listaAnimais = document.querySelector('.animais-lista');
 
-// Obtém a altura total do conteúdo da listaAnimais, incluindo a área não visível por rolagem (scroll)
+/* Obtém a altura total do conteúdo da listaAnimais, 
+incluindo a área não visível por rolagem (scroll)
+*/
 const height = listaAnimais.scrollHeight;
 
-// Obtém a distância entre o topo da listaAnimais e o topo do documento (ou seja, a posição vertical do elemento no layout da página)
+/* Obtém a distância entre o topo da listaAnimais e o topo do documento 
+(ou seja, a posição vertical do elemento no layout da página)
+*/
 const animaisTop = listaAnimais.offsetTop;
-
 console.log(animaisTop)
 
 const primeiroh2 = document.querySelector('h2');
 
-// Obtém a distância entre a borda esquerda do primeiro <h2> e a borda esquerda do elemento pai (ou seja, a posição horizontal do elemento no layout da página)
+/* Obtém a distância entre a borda esquerda do primeiro <h2> e a borda 
+esquerda do elemento pai (ou seja, a posição horizontal do elemento no layout da página)
+*/
 const h2Left = primeiroh2.offsetLeft
-
 console.log(h2Left);
 
-//* getBoundingClientRect()
-//Método que retorna um objeto com valores de width, height, distâncias do elemento e mais
 
+//* getBoundingClientRect()
+/*Método que retorna um objeto com valores de width, height, 
+distâncias do elemento e mais
+*/
 const rect = primeiroh2.getBoundingClientRect();
 console.log(rect);
+
 
 //* window
 
