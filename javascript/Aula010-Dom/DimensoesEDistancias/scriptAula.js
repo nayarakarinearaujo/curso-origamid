@@ -24,5 +24,24 @@ console.log(h2Left);
 const rect = primeiroh2.getBoundingClientRect();
 console.log(rect);
 
-//* 
+//* window
+
+console.log(
+
+    window.innerWidth, //width da janela
+    window.outerWidth, //soma dev tools também
+    window.innerHeight, //heigth da janela
+    window.outerHeight // soma a barra de endereço
+    
+)
+
+//* matchMedia();
+//Utilize um media-queri como no css para verificar a largura do browser
+
+const small = window.matchMedia('(max-width: 600px)').matches;
+if (small) {
+    console.log('Tela menor que 600px');
+} else {
+    console.log('Tela maior que 600px');
+}
 
