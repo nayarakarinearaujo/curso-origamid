@@ -3,10 +3,10 @@
 
 //*Adicione a classe ativo a todos os items do menu
 
-const itensMenu = document.querySelector('.menu a');
+const itensMenu = document.querySelectorAll('.menu a');
 
-itensMenu.forEach(itemt => {
-    itemt.classList.add('ativo');
+itensMenu.forEach((item) => {
+    item.classList.add('ativo');
     
 });
 
@@ -23,7 +23,7 @@ itensMenu[0].classList.add('ativo');
 
 //* Verifique se as imagens possuem o atributo alt
 
-const imgs = document.querySelectorAll('imgs');
+const imgs = document.querySelectorAll('img');
 
 imgs.forEach((img) => {
     const possuiAtributo = img.hasAttribute('alt');
