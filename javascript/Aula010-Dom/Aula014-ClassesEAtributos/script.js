@@ -21,6 +21,7 @@ if (menu.classList.contains('azul')) {
 //Remove e altera a classe
 console.log(menu.className);
 
+//Concatenar com a string menu.ClasseName
 menu.className =+ 'vermelho';
 
 
@@ -32,7 +33,8 @@ console.log(animais.attributes);
 
 //! Métodos getAttribute e setAttribute
 
-//* Get
+//* Get para pegar
+//Selecionar a primeira imagem
 const img = document.querySelector('img');
 
 //Passando por meio de variável
@@ -40,7 +42,23 @@ const img = document.querySelector('img');
 const srcImg = img.getAttribute('alt');
 console.log(srcImg);
 
-//* Set
-
+//* Set para setar
 //Ele vai adicionar classe
 img.setAttribute('alt', 'É uma raposa');
+
+//Verificar se possui algum atributo
+const possuiAlt = img.hasAttribute('alt');
+console.log(possuiAlt);
+
+//! Read Only vs Writable
+/*Propriedades que não permitem a mudança de seus valores, essas são considerados
+Read Onlky, ou seja, apenas leitura
+*/
+
+//? EX:
+animais.className; //String com o nome das classes
+animais.className = 'azul'; //Substitui completamente a string
+animais.className += 'vermelho'; //adicionar vermelho á string
+
+animais.attributes = 'class="ativo"'; //não funciona, read-only
+
