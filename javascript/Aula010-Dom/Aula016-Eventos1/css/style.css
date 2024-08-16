@@ -15,6 +15,10 @@ dl {
     padding: 0px;
 }
 
+.azul {
+    background: teal;
+}
+
 img {
     display: block;
     max-width: 100%;

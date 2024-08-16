@@ -90,3 +90,11 @@ window.addEventListener('keyup', handleEvent);
 /* Você pode adicionar atalhos para facilitar a navegação no seu site, através
 de eventos do keyboard
  */
+
+function handleKeyboard(event) {
+    if(event.key == 'a') {
+        document.body.classList.toggle('azul');
+    }
+}
+
+window.addEventListener('keydown', handleKeyboard);
