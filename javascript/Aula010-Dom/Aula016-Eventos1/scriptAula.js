@@ -47,7 +47,7 @@ linkExterno.addEventListener('click', handleLinkExterno);
 /* A palavra chave this é uma palavra especial de JavaScript, que pode fazer
 referência a diferentes objetos dependendo do contexto. No caso de eventos,
 ela fará referência ao elemento em que o addEventListener foi adicionado.
-*/ 
+*/
 
 function callback(event) {
     console.log(this); // Retorna a imagem
@@ -55,3 +55,19 @@ function callback(event) {
 }
 
 img.addEventListener('click', callback);
+
+
+//* Diferentes eventos
+/* Existem diversos eventos como click, scroll, resize, keydown, keyup, mouseenter
+e mais. Eventos podem ser adicionados a diferentes elementos, como o window
+e o documento também.
+ */
+
+/*
+? click: Quando um elemento é clicado.
+? scroll: Quando a página ou um elemento é rolado.
+? resize: Quando a janela do navegador é redimensionada.
+? keydown: Quando uma tecla é pressionada.
+? keyup: Quando uma tecla é liberada.
+? mouseenter: Quando o mouse entra em um elemento.
+ */
