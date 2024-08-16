@@ -71,3 +71,22 @@ e o documento também.
 ? keyup: Quando uma tecla é liberada.
 ? mouseenter: Quando o mouse entra em um elemento.
  */
+
+const h1 = document.querySelector('h1');
+
+function handleEvent(event) {
+    console.log(event.type, event);
+}
+
+h1.addEventListener('click', handleEvent);
+h1.addEventListener('mouseenter', handleEvent);
+h1.addEventListener('mousemove', handleEvent);
+
+window.addEventListener('scroll', handleEvent);
+window.addEventListener('resize', handleEvent);
+window.addEventListener('keyup', handleEvent);
+
+//* keyboadr
+/* Você pode adicionar atalhos para facilitar a navegação no seu site, através
+de eventos do keyboard
+ */
