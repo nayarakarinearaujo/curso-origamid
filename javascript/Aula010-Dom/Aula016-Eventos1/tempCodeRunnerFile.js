@@ -1,0 +1,1 @@
+imgs.forEach((item) => console.log(item));
