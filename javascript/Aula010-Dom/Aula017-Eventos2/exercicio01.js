@@ -7,6 +7,17 @@
 * comportamento padrão desses links
  */
 
+const linksInternos = document.querySelectorAll('a[href^="#"]');
+
+function handleLink(event) {
+    event.preventDefault();
+    this.classList.add('ativo');
+}
+
+linksInternos.forEach((link) => {
+    link.addEventListener('click', handleLink);
+})
+
 
 
 
@@ -20,7 +31,7 @@
 
 /* 
 * Utilizando o código anterior, ao invés de mostrar no console, remova o elemento
-* que está sendo clicado, o método remove()
+* que está sendo clicado, o método remove() remove um elemento
  */
 
 
