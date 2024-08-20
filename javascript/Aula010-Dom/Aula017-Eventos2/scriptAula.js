@@ -7,7 +7,7 @@ então é necessário um loop entre elementos de uma lista, para adicionarmos
 á cada um deles.
  */
 
-const imgs = document.querySelector('img');
+const imgs = document.querySelectorAll('img');
 
 function imgSrc(event) {
     const src = event.currentTarget.getAttribute('src');
