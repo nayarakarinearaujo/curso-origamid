@@ -28,10 +28,15 @@ linksInternos.forEach((link) => {
 * mostre quais elementos estão sendo clicados
  */
 
-const todosElementos = document.querySelectorAll('body *');
+// const todosElementos = document.querySelectorAll('body *');
 
-console.log(todosElementos)
+// function handleElemento(event) {
+//     event.currentTarget.remove();
+// }
 
+// // todosElementos.forEach((elemento) => {
+// //     elemento.addEventListener('click', handleElemento);
+// // })
 
 
 
@@ -46,3 +51,12 @@ console.log(todosElementos)
 /* 
 * Se o usuário clicar na tecla (t), aumente todo texto do site
  */
+
+function handleClikT(event) {
+    console.log(event.key);
+    if (event.key === 't') {
+        document.documentElement.classList.toggle('textoMaior');
+    }
+}
+
+window.addEventListener('keydown', handleClikT);

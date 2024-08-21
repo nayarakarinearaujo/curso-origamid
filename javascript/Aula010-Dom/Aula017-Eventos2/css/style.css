@@ -33,6 +33,10 @@ body {
     grid-template-rows: auto 1fr;
 }
 
+html.textoMaior {
+    font-size: 150%;
+}
+
 .menu {
     grid-column: 2 / 4;
     margin-top: 2rem;
