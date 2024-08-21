@@ -11,6 +11,10 @@ const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 function handleLink(event) {
     event.preventDefault();
+    linksInternos.forEach((link) => {
+        link.classList.remove('ativo');
+    })
+
     this.classList.add('ativo');
 }
 
@@ -19,12 +23,14 @@ linksInternos.forEach((link) => {
 })
 
 
-
-
 /* 
 * Selecione todos os elementos do site começando apartir do body ao clique
 * mostre quais elementos estão sendo clicados
  */
+
+const todosElementos = document.querySelectorAll('body *');
+
+console.log(todosElementos)
 
 
 
