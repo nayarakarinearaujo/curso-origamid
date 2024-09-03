@@ -118,6 +118,14 @@ html.textoMaior {
     grid-column: 2;
 }
 
+.animais-lista li {
+    cursor: pointer;
+}
+
+.animais-lista li:hover {
+    opacity: 0.8; /* Reduz ligeiramente a opacidade */
+}
+
 .animais-lista::-webkit-scrollbar {
     width: 18px;
 }
