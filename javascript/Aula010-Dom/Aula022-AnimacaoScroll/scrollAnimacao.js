@@ -1,4 +1,3 @@
-
 //* Função das imagens
 function initTabNav() {
   // Seleciona todos os elementos <li> dentro do contêiner com a classe .js-tabmenu
@@ -33,7 +32,6 @@ function initTabNav() {
 
 initTabNav();
 
-
 // * Função do FAQ
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
@@ -64,7 +62,6 @@ function initAccordion() {
 
 // Chame a função para inicializar o accordion
 initAccordion();
-
 
 //* Scroll Suave
 
@@ -102,15 +99,26 @@ initScrollSuave();
 
 //* Scroll Animação
 
-const sections = document.querySelectorAll('.js-scroll');
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
 
-function animaScroll() {
-  sections.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top;
-    if(sectionTop < 0) {
-      section.classList.add('ativo');
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = sectionTop - windowMetade < 0;
+        if (isSectionVisible) {
+          section.classList.add("ativo");
+        } else section.classList.remove("ativo");
+      });
     }
-  })
+
+    animaScroll();
+
+    window.addEventListener("scroll", animaScroll);
+  }
 }
 
-window.addEventListener('scroll', animaScroll);
+initAnimacaoScroll();
