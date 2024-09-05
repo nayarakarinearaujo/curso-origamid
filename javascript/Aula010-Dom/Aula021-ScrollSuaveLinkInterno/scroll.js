@@ -1,4 +1,5 @@
-// Função das imagens
+
+//* Função das imagens
 function initTabNav() {
   // Seleciona todos os elementos <li> dentro do contêiner com a classe .js-tabmenu
   const tabMenu = document.querySelectorAll(".js-tabmenu li");
@@ -32,7 +33,8 @@ function initTabNav() {
 
 initTabNav();
 
-// Função do FAQ
+
+// * Função do FAQ
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
   const activeClass = "ativo";
@@ -63,14 +65,36 @@ function initAccordion() {
 // Chame a função para inicializar o accordion
 initAccordion();
 
-const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 
-function scrollToSection(event) {
-  event.preventDefault();
-  const href = event.currentTarget.getAtribute("href");
-  const section = document.querySelector(href);
+//* Scroll Suave
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+
+    //! window.scrollTo
+
+    // const topo = section.offsetTop;
+    // window.scrollTo({
+    //   top: topo,
+    //   behavior: 'smooth',
+    // })
+
+    //! scrollIntoView
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+  });
 }
 
-linksInternos.forEach((link) => {
-  link.addEventListener("click", scrollToSection);
-});
+initScrollSuave();
