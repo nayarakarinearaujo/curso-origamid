@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- action é para enviar as informações para um arquivo php
-     e os methods também está relacionado ao php, qual method usado para enviar
-     a informação -->
 
-    <form action="./">
-        <label for="">Nome:</label>
-        <input type="text" name="" id="">
-    </form>
+   <!-- O atributo 'action' define para onde os dados do formulário serão enviados.
+     Normalmente, aponta para um arquivo do lado do servidor, como um arquivo PHP.
+     Exemplo: action="processa_formulario.php" irá enviar os dados para o arquivo processa_formulario.php.
+
+     O atributo 'method' especifica como os dados do formulário serão enviados.
+     Existem dois métodos principais:
+     - 'GET': Envia os dados como parâmetros na URL. Usado quando os dados não são sensíveis.
+     - 'POST': Envia os dados no corpo da requisição, geralmente usado quando se trata de informações confidenciais ou envio de grandes quantidades de dados.
+-->
+
+<form action="./">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+
+    <button>Enviar</button>
+</form>
 
 </body>
 </html>
