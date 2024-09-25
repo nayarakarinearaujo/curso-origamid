@@ -1,0 +1,23 @@
+body {
+    font-size: 2rem;
+}
+
+.titulo {
+    color: blueviolet;
+    padding: 10px;
+}
+
+#produtos {
+    color: lightgreen;
+}
+
+html body section h2 {
+    border-left: 8px solid lightgreen;
+}
+
+/* Seletor !important sempre vai prevalecer */
+/* 
+h2 {
+    color: black !important;
+} */
+
