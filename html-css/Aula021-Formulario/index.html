@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-   <!-- O atributo 'action' define para onde os dados do formulário serão enviados.
+    <!-- O atributo 'action' define para onde os dados do formulário serão enviados.
      Normalmente, aponta para um arquivo do lado do servidor, como um arquivo PHP.
      Exemplo: action="processa_formulario.php" irá enviar os dados para o arquivo processa_formulario.php.
 
@@ -18,36 +20,72 @@
      - 'POST': Envia os dados no corpo da requisição, geralmente usado quando se trata de informações confidenciais ou envio de grandes quantidades de dados.
 -->
 
-<form action="./">
-    <!-- required: não deixa enviar o formulário sem o campo preenchido -->
+    <form action="./">
+        <!-- required: não deixa enviar o formulário sem o campo preenchido -->
 
-    <!-- 
+        <!-- 
     <label for=""></label>
     <input type="" name="" id=""> 
     -->
 
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome" required>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
 
-    <label for="cpf">CPF</label>
-    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
 
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" id="senha"required>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required>
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" required>
+        <div class="checkbox">
+            <input type="checkbox" name="termo" id="termo">
+            <label for="termo">Aceito os termos de condições.</label>
+        </div>
 
-    <label for="idade">Idade</label>
-    <input type="number" name="idade" id="idade">
+        <div class="checkbox">
+            <input type="checkbox" name="anuncio" id="anuncio">
+            <label for="anuncio">Desejo receber anúncios.</label>
+        </div>
 
-    <label for="saida">Saída</label>
-    <input type="date" name="saida" id="saida">
+        <p>Entrega:</p>
+        <div class="radio">
+            <input type="radio" name="retirada" id="retirada">
+            <label for="retirada">Retirar no local.</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="retirada" id="entrega">
+            <label for="entrega">Entrega em casa.</label>
+        </div>
+
+        <!-- Grupos diferentes -->
+
+        <p>Futuro:</p>
+        <div class="radio">
+            <input type="radio" name="futuro" id="retirada2">
+            <label for="retirada">Retirar no local.</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="futuro" id="entrega2">
+            <label for="entrega">Entrega em casa.</label>
+        </div>
 
 
-    <button>Enviar</button>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
 
-</form>
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade">
+
+        <label for="saida">Saída</label>
+        <input type="date" name="saida" id="saida">
+
+
+        <button>Enviar</button>
+
+    </form>
 
 </body>
+
 </html>
