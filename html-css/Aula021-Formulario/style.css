@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+}
+
+/* input sempre precisa ajustar a font */
+input {
+    font-size: 1.2rem;
+    padding: 10px;
+}
