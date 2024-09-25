@@ -1,0 +1,48 @@
+[required] {
+    border: 2px solid tomato;
+}
+
+/* selecionando o a para estilização AVANÇADOS */
+[href="#contato"] {
+    border: 2px solid greenyellow;
+}
+
+[href^="#"] {
+    background: tomato;
+}
+
+[href$=".com"] {
+    background: forestgreen;
+}
+
+/* selecionando h2 filho de section */
+section>h2 {
+    color: blueviolet;
+}
+
+p {
+    margin: 0px;
+}
+
+article {
+    background: lightgreen;
+    padding: 10px;
+}
+
+
+/* como selecionar último p */
+/* article p:last-child {
+    margin-bottom: 0px;
+} */
+
+
+/* Outra forma */
+p+p {
+    margin-top: 20px;
+}
+
+/* selecionar todos elementos do site */
+
+* {
+    border: 2px solid black;
+}
