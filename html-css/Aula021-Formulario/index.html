@@ -19,10 +19,34 @@
 -->
 
 <form action="./">
+    <!-- required: não deixa enviar o formulário sem o campo preenchido -->
+
+    <!-- 
+    <label for=""></label>
+    <input type="" name="" id=""> 
+    -->
+
     <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome">
+    <input type="text" name="nome" id="nome" required>
+
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" id="senha"required>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="idade">Idade</label>
+    <input type="number" name="idade" id="idade">
+
+    <label for="saida">Saída</label>
+    <input type="date" name="saida" id="saida">
+
 
     <button>Enviar</button>
+
 </form>
 
 </body>
