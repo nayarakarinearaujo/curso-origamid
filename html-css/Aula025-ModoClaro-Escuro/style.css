@@ -3,6 +3,11 @@
   --cor-primaria-escura: #900;
   --fundo1: #f7f7f7;
   --fundo2: #ffff;
+  --texto: #000000;
+}
+
+@media () {
+  
 }
 
 
@@ -61,7 +66,7 @@ p {
   background: var(--fundo2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: #000000;
+  color: var(--texto);
   text-transform: uppercase;
   border: 2px solid var(--fundo2);
 }
