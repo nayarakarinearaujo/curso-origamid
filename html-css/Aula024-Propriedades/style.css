@@ -1,0 +1,35 @@
+
+:root {
+    --roxo: #84e;
+    --fundo: #fff;
+    --text1: #111;
+    --text2: #444;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --roxo: #84e;
+        --fundo: #222;
+        --text1: #eee;
+        --text2: #bbb;
+    }
+}
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;
+     background: var(--fundo);
+ }
+
+ html body h1 {
+     border-left: 8px solid var(--roxo);
+ }
+
+ h1 {
+     color: var(--text1);
+ }
+
+ p {
+     color: var(--text2);
+ }
