@@ -1,4 +1,6 @@
 
 const upperName = (name) => {
-    return name.toUppercase();
+    return name.toUpperCase();
 }
+
+console.log(upperName('nayara'));
