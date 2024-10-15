@@ -1,21 +1,23 @@
 :root {
   --cor-primaria: #e21;
   --cor-primaria-escura: #900;
-  --fundo1: #f7f7f7;
-  --fundo2: #ffff;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
   --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("./img/onda-clara.svg");
 }
 
-:root {
-  --fundo1: #111;
-  --fundo2: #000;
-  --texto: #ffffff;
-}
 
 @media (prefers-color-scheme: dark) {
-  
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("./img/onda-escura.svg");
+  }
 }
-
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +26,7 @@ body {
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
-  background-color: var(--fundo1);
+  background-color: var(--fundo-1);
   color: var(--texto);
 }
 
@@ -70,12 +72,12 @@ p {
 
 .menu a {
   display: block;
-  background: var(--fundo2);
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
   color: var(--texto);
   text-transform: uppercase;
-  border: 2px solid var(--fundo2);
+  border: 2px solid var(--fundo-2);
 }
 
 .menu a:hover {
@@ -89,7 +91,7 @@ p {
 }
 
 .introducao {
-  background: var(--fundo2);
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -120,7 +122,7 @@ p {
 
 .botao {
   background: var(--cor-primaria);
-  color: var(--fundo2);
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -133,16 +135,16 @@ p {
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url("./img/onda.svg");
+  background-image: var(--onda);
   /* word-break: break-all; */
 }
 
 .vantagens {
-  background: var(--fundo2);
+  background: var(--fundo-2);
   padding: 40px;
 }
 
@@ -155,7 +157,7 @@ p {
 }
 
 .vantagens-item:nth-child(odd) {
-  background: var(--fundo1);
+  background: var(--fundo-1);
 }
 
 .vantagens-item:hover {
@@ -167,7 +169,7 @@ p {
 }
 
 .rodape {
-  background: var(--fundo2);
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
