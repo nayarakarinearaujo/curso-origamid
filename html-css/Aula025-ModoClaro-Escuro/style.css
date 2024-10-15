@@ -6,7 +6,13 @@
   --texto: #000000;
 }
 
-@media () {
+:root {
+  --fundo1: #111;
+  --fundo2: #000;
+  --texto: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
   
 }
 
@@ -19,6 +25,7 @@ body {
   justify-items: center;
   margin-top: 60px;
   background-color: var(--fundo1);
+  color: var(--texto);
 }
 
 img {
