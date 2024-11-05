@@ -1,0 +1,1 @@
+steTimeOut(callback, tempo, argl, arg2, ...) ,étodo assíncrono que ativa o callback após tempp. Não existe garantia de que o código será executado exatamente após o tempo, pois o callback entra na fila e espera pela call stack estar vazia.
