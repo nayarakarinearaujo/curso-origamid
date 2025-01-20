@@ -14,7 +14,7 @@ console.log(frase[frase.length - 2]);
 
 
 //* string.charat(n)
-//Retorna o caracter de acrodo com o index de (n)
+//Retorna o caracter de acordo com o index de (n)
 
 console.log(frase.charAt[frase.length - 2]); //Ele dará undefined passando como array
 
@@ -49,9 +49,9 @@ console.log(fruta.includes(listaFrutas)); //false
 
 
 //* string.endWith(search) e string.startWith(search)
-//Procura pela string exata dentro de outra string. A procura é case sensitive
+//procura termina com ou começa com, ele é case sensitive
 
 console.log("Procura pela string exata");
-console.log(fruta.endsWith('nana'));
-console.log(fruta.startsWith('Ba'));
-console.log(fruta.startsWith('na'));
+console.log(fruta.endsWith('nana')); // termina com
+console.log(fruta.startsWith('Ba')); // começa com
+console.log(fruta.startsWith('na')); // começa com
