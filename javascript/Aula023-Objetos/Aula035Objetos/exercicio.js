@@ -38,3 +38,4 @@ console.log(Object.getOwnPropertyNames(String.prototype));
 
 //Array
 console.log(Object.getOwnPropertyNames(Array.prototype));
+
