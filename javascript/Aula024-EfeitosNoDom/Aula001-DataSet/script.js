@@ -3,12 +3,12 @@
 
 // console.log(h1.dataset);
 
-const div = document.querySelector("div");
-console.log(div.dataset); // {cor: "azul", tamanho: "grande"}
+// const div = document.querySelector("div");
+// console.log(div.dataset); // {cor: "azul", tamanho: "grande"}
 
-//dataset é uma propriedade do elemento HTML, que retorna um objeto com os atributos data-* do elemento
-//selecionando com atributo
-const dataCor = document.querySelector("[data-cor]");
-console.log(dataCor); // <div data-cor="azul" data-tamanho="grande"></div>
+// //dataset é uma propriedade do elemento HTML, que retorna um objeto com os atributos data-* do elemento
+// //selecionando com atributo
+// const dataCor = document.querySelector("[data-cor]");
+// console.log(dataCor); // <div data-cor="azul" data-tamanho="grande"></div>
 
-div.dataset.heigth = 1000
+// div.dataset.heigth = 1000
