@@ -24,6 +24,10 @@ ul {
     list-style: none;
 }
 
+[data-cor] {
+    color: blue;
+}
+
 body {
     background: #faf6ed;
     color: #222;

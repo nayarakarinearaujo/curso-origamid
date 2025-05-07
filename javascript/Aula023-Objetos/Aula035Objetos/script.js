@@ -116,6 +116,7 @@ const carro2 = {
 //* Retorna as chaves (propriedades) do objeto
 Object.keys(carro2);
 // ['marca', 'ano']
+console.log(Object.keys(carro2))
 
 //* Object.freeze torna o objeto imutável (não permite adicionar/remover/alterar)
 Object.freeze(carro2);

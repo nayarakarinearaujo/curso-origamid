@@ -1,7 +1,7 @@
 // *Crie uma função que verifique corretamente o tipo de dado
 
 function tipoDeDado(dado) {
-  return Object.prototype.toString.call(dado).slice(8, -1); // Retorna o tipo de dado sem os colchetes
+  return Object.prototype.toString.call(dado)
 }
 
 console.log(tipoDeDado("Banana")); // String
@@ -30,6 +30,7 @@ Object.defineProperty(quadrado, "lados", {
 console.log(quadrado.lados); // 4
 quadrado.lados = 5; // Tenta alterar a propriedade
 console.log(quadrado.lados); // 4, pois a propriedade não pode ser alterada
+console.log(quadrado); // 4, pois a propriedade não pode ser alterada
 
 // *Previna qualquer mudança no objeto abaixo
 
