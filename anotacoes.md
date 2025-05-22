@@ -7,4 +7,4 @@ Parei na #F0319 - Header e menu 2
 
 TypeScript
 Parei na 
-#F0772 - 02.03 Union Types 1
+#F0775 - 02.04 Types E Interfaces 2
