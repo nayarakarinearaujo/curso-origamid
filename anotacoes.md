@@ -6,5 +6,5 @@ HTML e CSS
 Parei na #F0319 - Header e menu 2
 
 TypeScript
-Parei na 
-#F0775 - 02.04 Types E Interfaces 2
+Parei na npm run st
+#F0781 - 03.04 Instanceof 1
