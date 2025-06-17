@@ -17,10 +17,10 @@ console.log(carro.marca);
 // pois ajudam a garantir que os parâmetros e o retorno estejam corretos.
 // 💡 Exemplo de função com anotações de tipo:
 //? ✅ Função com tipos definidos para os parâmetros e para o retorno
-function somar(a, b) {
-    return a + b;
-}
-console.log(somar(25, 6));
+// function somar(a: number, b: number): number {
+//   return a + b;
+// }
+// console.log(somar(25, 6));
 //? ✅ Objeto com valores do tipo string
 const nintendo = {
     nome: "Nintendo",
