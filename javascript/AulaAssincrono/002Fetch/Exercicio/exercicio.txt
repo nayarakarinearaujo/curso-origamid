@@ -1,8 +1,9 @@
 Utilizando a API via cep, crie um formulário onde o usuário pode digitar o cep e o endereço completo
 é retornado ao clicar em buscar.
 
-Utilizando API blockchain.info/ticker retorne no DOM o valor da compra da bitcoin em reais.
+Utilizando API blockchain.info/ticker retorne no DOM 
+o valor da compra da bitcoin em reais.
 Atualize este valor a cada 30s
 
-Utilizando a API api.chucknorris.io/jokes/random retorne uma piada randomica do chicknorris, toda vez
-que clicar em próxima
+Utilizando a API api.chucknorris.io/jokes/random retorne uma 
+piada randomica do chicknorris, toda vez que clicar em próxima

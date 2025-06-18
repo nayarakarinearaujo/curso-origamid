@@ -1,12 +1,16 @@
-const inputCep = document.getElementById("inCep");
-const btnCep = document.getElementById("btbuscarCep");
-const resultado = document.getElementById("resultadoCep");
+//Nesse caso poderia usar o async também
 
-function buscarCep() {
+function buscarCep(event) {
+  event.preventDefault();
+  const inputCep = document.getElementById("inCep");
+  const resultado = document.getElementById("resultado");
+
   const cep = inputCep.value.trim();
+
   // Verifica se o CEP é válido
   if (cep.length !== 8 || isNaN(cep)) {
     alert("Digite um CEP válido com 8 números!");
+    return;
   }
   fetch(`https://viacep.com.br/ws/${cep}/json/`)
     .then((response) => response.json())
@@ -28,4 +32,5 @@ function buscarCep() {
       console.error("Erro na requisição:", erro);
     });
 }
+const btnCep = document.getElementById("btbuscarCep");
 btnCep.addEventListener("click", buscarCep);
