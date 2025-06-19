@@ -9,14 +9,16 @@ async function buscarPiadas(event) {
     const response = await fetch("https://api.chucknorris.io/jokes/random");
     const dados = await response.json();
     console.log(dados.value);
+    console.log(dados);
 
-    const piadas = dados.value;
+    // const piadas = dados.value;
 
     if (dados.erro) {
       resultado.innerText = "Piadas não encontrado";
     } else {
       resultado.innerHTML = `
-         <p>${piadas}</p>
+         <img src="${dados.icon_url}" alt="Ícone Chuck Norris">
+         <p>${dados.value}</p>
          `;
     }
   } catch (erro) {

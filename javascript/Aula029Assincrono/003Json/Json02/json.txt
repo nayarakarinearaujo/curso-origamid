@@ -1,0 +1,61 @@
+/*
+📘 JSON.parse() e JSON.stringify()
+
+- JSON.parse() transforma um **texto JSON** em um **objeto JavaScript**.
+  Exemplo: JSON recebido de um arquivo ou de uma API.
+
+- JSON.stringify() transforma um **objeto JavaScript** em uma **string JSON**.
+  Exemplo: para salvar dados no localStorage ou enviar para um servidor.
+*/
+
+//* Exemplo de JSON.parse()
+fetch("../Json/dados.json") // Faz a requisição do arquivo JSON
+  .then((response) => response.text()) // Converte a resposta para texto
+  .then((jsonText) => {
+    // Desserialização: converte o texto JSON em objeto JavaScript
+    const jsonFinal = JSON.parse(jsonText);
+    console.log(jsonFinal); // Mostra o objeto no console
+  });
+
+
+//* Exemplo de JSON.stringify()
+const aula = {
+  id: 1,
+  aula: "HTML",
+  tempo: "30min",
+};
+
+// Serialização: converte o objeto JavaScript para uma string no formato JSON
+const stringConfig = JSON.stringify(aula);
+console.log(stringConfig); // Exibe a string JSON
+
+//------------------------------------------
+
+/*
+📌 NOME TÉCNICO:
+- Serialização: transformar um objeto JavaScript em uma string JSON
+*/
+
+// Armazena a string JSON no localStorage com a chave "config"
+localStorage.config = JSON.stringify(aula);
+
+
+/*
+📌 NOME TÉCNICO:
+- Desserialização: transformar uma string JSON em um objeto JavaScript
+*/
+
+// Recupera o conteúdo do localStorage (em texto) e converte de volta para objeto
+console.log(JSON.parse(localStorage.config));
+
+/*
+💡 RESUMO:
+- JSON.stringify(obj): transforma objeto em string JSON
+- JSON.parse(json): transforma string JSON em objeto
+- localStorage: armazena apenas strings → por isso usamos stringify/parse
+
+✅ Usado para:
+- Salvar e recuperar dados com localStorage
+- Comunicar com APIs que trocam dados em JSON
+- Persistência de estado em aplicações web (como salvar configurações do usuário)
+*/

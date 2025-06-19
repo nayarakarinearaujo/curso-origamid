@@ -1,6 +1,6 @@
 JavaScript
 Parei na 
-#F0475 - 0603 Fetch 1
+#F0479 - 0605 API e HTTP
 
 HTML e CSS
 Parei na #F0319 - Header e menu 2
