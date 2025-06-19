@@ -1,5 +1,4 @@
 async function buscarBitcoin(event) {
-
   const resultado = document.getElementById("resultado");
 
   try {
@@ -24,6 +23,7 @@ async function buscarBitcoin(event) {
 
 buscarBitcoin();
 
-setInterval(() => {
-  buscarBitcoin();
-}, 30000);
+//Função para atualizar a cada 30 segundos
+// setInterval(() => {
+//   buscarBitcoin();
+// }, 30000);
