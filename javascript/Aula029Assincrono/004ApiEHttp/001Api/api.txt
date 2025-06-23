@@ -13,3 +13,15 @@ A interface são os comandos criados para permitir a interação com a
 aplicação. Ex: 'VIOLAO'.toLowerCase() é um método que faz parte da
 interface do objeto String. A interação com a interface retorna um efeito /
 resposta.
+
+method
+GET
+Puxa informação, utilizado para pegar posts, usuários e etc.
+POST
+Utilizado para criar posts, usuários e etc.
+PUT
+Geralmente utilizado para atualizar informações.
+DELETE
+Deleta uma informação.
+HEAD
+Puxa apenas os header
